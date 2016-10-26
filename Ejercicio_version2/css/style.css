@@ -1,0 +1,17 @@
+button{
+    background-color: #5882FA;
+    width: 174px;
+    color:white;
+}
+div {
+    display: inline-block;
+}
+
+.inputcaja{
+	margin-left: 0px;
+	margin-top: 10px;
+}
+
+.bloque {
+	display: block;
+}
