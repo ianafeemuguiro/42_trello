@@ -1,6 +1,6 @@
 .btn-firts{
     background-color: #5882FA;
-    width: 250px;
+    width: 255px;
     height: 40px;
     color:white;
     display: block;
@@ -34,6 +34,6 @@ h1{
 }
 
 .scroll {
-    height: 100px;   
-    overflow-y : scroll;
+    white-space:nowrap;
 }
+

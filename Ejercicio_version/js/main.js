@@ -1,20 +1,22 @@
- function dragStart(event) {
-    event.dataTransfer.setData("text", event.target.id);
-    document.getElementById("dragtarget").innerHTML = "Añade el nombre de tu lista";
+function dragStart(event) {
+  console.log(event.target);
+  event.dataTransfer.setData("text", event.target.id);  
 }
 
-function dragEnd(event) {
-    document.getElementById("dragtarget").innerHTML = "Tu texto se a pasado";
+function dragEnd(event) {  
 }
 
 function allowDrop(event) {
+  console.log("allow")
     event.preventDefault();
 }
 
 function drop(event) {
-    event.preventDefault();
+    console.log ("drop");
     var data = event.dataTransfer.getData("text");
+    console.log (data);
     event.target.appendChild(document.getElementById(data));
+    event.preventDefault();
 }
 
 function  myFunction (){
